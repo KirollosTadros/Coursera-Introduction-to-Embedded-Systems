@@ -1,4 +1,4 @@
 /* Add Author and Project Details here */
 
 Kirollos Henry
-Assignement 1
+Coursera Introdcution to Embedded Systems Course
