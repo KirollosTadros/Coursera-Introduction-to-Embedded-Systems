@@ -36,7 +36,7 @@
  * @return <Add Return Informaiton here>
  */
 
-void print_statistics(float mean, unsigned median, unsigned char min, unsigned char max);
+void print_statistics(unsigned char *arr, int size);
 void print_array(unsigned char *arr, unsigned int size);
 unsigned char find_median(unsigned char *arr, unsigned int size);
 double find_mean(unsigned char *arr, unsigned int size);
