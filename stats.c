@@ -42,7 +42,7 @@ void main() {
   printf ("Array befor Sorting:\n\n");
   print_array(test,SIZE);
   sort_array(test, SIZE);
-  printf("\nArray After Sorting\n\n");
+  printf("\n\nArray After Sorting:\n\n");
   print_array(test, SIZE);
 
 }
