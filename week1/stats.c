@@ -99,10 +99,15 @@ void sort_array(unsigned char *arr, unsigned int size)
 
 void print_array(unsigned char *arr, unsigned int size)
 {
+  printf("[ ");
   for(int i = 0; i < size; i++)
   {
-      printf("%u \t\t", arr[i] );
+      if(i+1 != size)
+      	printf("%u; \t", arr[i] );
+      else
+	printf("%u ", arr[i] );
   }
+  printf(" ]\n");
 }
 unsigned char find_median(unsigned char *arr, unsigned int size)
 {
