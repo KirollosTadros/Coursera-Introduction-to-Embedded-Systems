@@ -39,7 +39,7 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
   print_statistics(test,SIZE);
-  printf ("Array befor Sorting:\n\n ");
+  printf ("Array befor Sorting:\n\n");
   print_array(test,SIZE);
   sort_array(test, SIZE);
   printf("\nArray After Sorting\n\n");
@@ -113,19 +113,19 @@ unsigned char find_median(unsigned char *arr, unsigned int size)
   }
    sort_array(sorted,size);
    
-   int n = (size+1) / 2 - 1;
+   int n = size / 2 ;
 
    return sorted[n];
 }
 
 void print_statistics(unsigned char* arr, int size)
 {
-    float mean = find_mean(arr, SIZE);
+    int mean = find_mean(arr, SIZE);
     unsigned char median= find_median(arr, SIZE);
     unsigned char min = find_minimum(arr, SIZE);
     unsigned char max = find_maximum(arr, SIZE);
 
-    printf("Mean : %f\n\n", mean);
+    printf("Mean : %d\n\n", mean);
     printf("Median : %u\n\n", median);
     printf("Minimum : %u\n\n", min);
     printf("Maximum : %u\n\n", max);
