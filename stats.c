@@ -106,11 +106,16 @@ void print_array(unsigned char *arr, unsigned int size)
 }
 unsigned char find_median(unsigned char *arr, unsigned int size)
 {
-   sort_array(arr,size);
+  unsigned char sorted[size];
+  for(int i = 0 ;i<size ;i++)
+  {
+      sorted[i] = arr[i];
+  }
+   sort_array(sorted,size);
    
    int n = (size+1) / 2 - 1;
 
-   return arr[n];
+   return sorted[n];
 }
 
 void print_statistics(unsigned char* arr, int size)
